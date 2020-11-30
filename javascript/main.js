@@ -1,5 +1,5 @@
 // ## Array Cardio Day 2
-
+'use strict';
 const people = [
     { name: 'Gwen', year: 1988 },
     { name: 'Benjamin', year: 1986 },
@@ -15,14 +15,63 @@ const comments = [
     { text: 'Nice Nice Nice!', id: 542328 },
 ];
 
-const twenty = people.filter(function (people) {
-    if (people.year < 2000) {
-        return true; // keep it
-    }
-});
+const mates = ['Benjamin, Deboutin', 'Denyze, Hottechamps', 'Lionel, Cosson', 'Olivier, Cholley'];
 
-console.table(twenty);
-ddg;
+const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
+
+console.log(data);
+
+const transports = data.reduce(function (obj, item) {
+    if (!obj[item]) {
+        obj[item] = 0;
+    }
+    obj[item]++;
+    return obj;
+}, {});
+
+console.log(transports);
+
+// const alpha = mates.sort(function (lastOne, nextOne) {
+//     const [aLast, aFirst] = lastOne.split(', ');
+//     const [bLast, bFirst] = nextOne.split(', ');
+//     return aFirst > bFirst ? 1 : -1;
+// });
+
+// console.log(alpha);
+
+// const somme = comments.reduce((total, comment) => total + comment.id, 0);
+
+// console.log(somme);
+
+// const twenty = people.filter(people => people.year < 2000 && people.year > 1987);
+
+// console.table(twenty);
+
+// const presentation = people.map(people => people.year / 2);
+
+// console.log(presentation);
+
+// const orderedComments = comments.sort(function (a, b) {
+//     if (a.id > b.id) {
+//         return 1;
+//     } else {
+//         return -1;
+//     }
+// });
+
+// const orderedComments = comments.sort((a, b) => (a.id > b.id ? 1 : -1));
+
+// console.table(orderedComments);
+
+// https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+// const category = document.querySelector('.mw-category');
+// const links = Array.from(category.querySelectorAll('a'));
+// console.log(category);
+
+// const boulevardDe = links.map(link => link.textContent).filter(name => name.includes('de'));
+
+// console.log(boulevardDe);
+
 // Some and Every Checks
 // Array.prototype.some() // is at least one person 19 or older?
 // Array.prototype.every() // is everyone 19 or older?
