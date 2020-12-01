@@ -1,35 +1,35 @@
 // ## Array Cardio Day 2
-'use strict';
-const people = [
-    { name: 'Gwen', year: 1988 },
-    { name: 'Benjamin', year: 1986 },
-    { name: 'Denyze', year: 1987 },
-    { name: 'Furimi', year: 2010 },
-];
+// 'use strict';
+// const people = [
+//     { name: 'Gwen', year: 1988 },
+//     { name: 'Benjamin', year: 1986 },
+//     { name: 'Denyze', year: 1987 },
+//     { name: 'Furimi', year: 2010 },
+// ];
 
-const comments = [
-    { text: 'Love this!', id: 523423 },
-    { text: 'Super good', id: 823423 },
-    { text: 'You are the best', id: 2039842 },
-    { text: 'Ramen is my fav food ever', id: 123523 },
-    { text: 'Nice Nice Nice!', id: 542328 },
-];
+// const comments = [
+//     { text: 'Love this!', id: 523423 },
+//     { text: 'Super good', id: 823423 },
+//     { text: 'You are the best', id: 2039842 },
+//     { text: 'Ramen is my fav food ever', id: 123523 },
+//     { text: 'Nice Nice Nice!', id: 542328 },
+// ];
 
-const mates = ['Benjamin, Deboutin', 'Denyze, Hottechamps', 'Lionel, Cosson', 'Olivier, Cholley'];
+// const mates = ['Benjamin, Deboutin', 'Denyze, Hottechamps', 'Lionel, Cosson', 'Olivier, Cholley'];
 
-const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
+// const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
 
-console.log(data);
+// console.log(data);
 
-const transports = data.reduce(function (obj, item) {
-    if (!obj[item]) {
-        obj[item] = 0;
-    }
-    obj[item]++;
-    return obj;
-}, {});
+// const transports = data.reduce(function (obj, item) {
+//     if (!obj[item]) {
+//         obj[item] = 0;
+//     }
+//     obj[item]++;
+//     return obj;
+// }, {});
 
-console.log(transports);
+// console.log(transports);
 
 // const alpha = mates.sort(function (lastOne, nextOne) {
 //     const [aLast, aFirst] = lastOne.split(', ');
